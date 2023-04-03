@@ -1,4 +1,4 @@
-package com.example.sprboot.controller;
+package com.example.sprboot.controller.main;
 
 import java.net.http.HttpRequest;
 
@@ -34,23 +34,5 @@ public class mainController {
         //컨트롤러에 대한 설정은 서블릿컨텍스트에 있다.
     }//>> main.jsp를 컨트롤 클래스를 경유하여 실행한다.
 
-    // 로그인 페이지로 이동
-    @RequestMapping("/login") // url pattern mapping
-    public String login() {
-        
-        return "login/login"; 
-
-    }//>> main.jsp를 컨트롤 클래스를 경유하여 실행한다.
-
-    @RequestMapping("/loginAction")
-    public String loginAction(HttpServletRequest request){
-        String id = request.getParameter("id");
-        String password = request.getParameter("password");
-
-        log.info(id);
-        log.info(password);
-
-        return "login/login";
-
-    }
+   
 }
