@@ -1,4 +1,4 @@
-package com.example.sprboot.controller.login;
+package com.example.sprboot.login.controller;
 
 import java.net.http.HttpRequest;
 
@@ -25,12 +25,7 @@ public class loginController {
  
      }//>> main.jsp를 컨트롤 클래스를 경유하여 실행한다.
  
-     @RequestMapping("/register") // url pattern mapping
-     public String register() {
-         
-         return "register/register"; 
- 
-     }//>> main.jsp를 컨트롤 클래스를 경유하여 실행한다.
+     
  
      // @RequestMapping("/loginAction")
      // public String loginAction(HttpServletRequest request){

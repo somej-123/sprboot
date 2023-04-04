@@ -1,4 +1,4 @@
-package com.example.sprboot.controller.main;
+package com.example.sprboot.main.controller;
 
 import java.net.http.HttpRequest;
 
